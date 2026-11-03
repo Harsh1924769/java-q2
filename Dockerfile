@@ -1,5 +1,5 @@
-FROM openjdk:17-slim
+FROM eclipse-temurin:17-jdk-jammy
 WORKDIR /app
-COPY hello.java .
-RUN javac hello.java
-CMD ["java", "hello"]
+COPY index.java .
+RUN javac index.java
+CMD ["java", "index"]
